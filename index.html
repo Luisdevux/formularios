@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="EX: Luis Felipe Lopes"/>
+        </div>
+        <div>
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="email" placeholder="luis.felipe@gmail.com" />
+        </div>
+        <div>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" id="sexo_masculino" checked>
+            <label for="sexo masculino">masculino</label>
+            <input type="radio" name="sexo" id="sexo_feminino">
+            <label for="sexo feminino">feminino</label>
+
+        </div>
+        <div>
+            <label for="cursos">Curso:</label>
+            <select id="cursos">
+                <option value="1">HTML e CSS</option>
+                <option value="2">Git</option>
+                <option value="3">API</option>
+            </select>
+        </div>
+        <div>
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" placeholder="Escreva aqui as observações"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="termos" />
+            <label for="termos">Estou de acordo com os termos de serviço</label>
+        </div>
+        <div>
+            <input type="submit" value="Cadastrar">
+        </div>
+    </form>
+</body>
+</html>
