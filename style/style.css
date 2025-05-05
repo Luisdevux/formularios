@@ -21,7 +21,7 @@
   }
 
   .form-title {
-    background: linear-gradient(rgba(0, 0, 0, 0.3)), url(/assets/fotoProgramacao.jpg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3)), url(./assets/fotoProgramacao.jpg) center/cover;
     color: #ffffff;
     padding: 50px;
     border-radius: 8px;
