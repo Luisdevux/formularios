@@ -10,31 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-title">
-            <h2>Formulário de cadastro para Curso</h2>
+    <div class="form-cartoes">
+        <div class="form-titulo">
+            <h2>Formulário de cadastro para cursos</h2>
         </div>
         <form>
-            <div class="form-section">
+            <div class="form-conteudo">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="ex: Luis Felipe Lopes" required />
             </div>
 
-            <div class="form-section">
+            <div class="form-conteudo">
                 <label for="e-mail">E-mail:</label>
                 <input type="email" id="email" placeholder="ex: meu.email@gmail.com" required />
             </div>
 
-            <div class="form-section">
+            <div class="form-conteudo">
                 <label>Sexo:</label>
-                <div class="form-options">
+                <div class="form-opcoes">
                     <input type="radio" name="sexo" id="sexo_masculino" required>
                     <label for="sexo masculino">Masculino</label>
                     <input type="radio" name="sexo" id="sexo_feminino" required>
                     <label for="sexo feminino">Feminino</label>
                 </div>            
             </div>
-            <div class="form-section">
+            <div class="form-conteudo">
                 <label for="cursos">Curso:</label>
                 <select id="cursos" required>
                     <option value="" disabled selected>Selecione um curso</option>
@@ -43,12 +43,12 @@
                     <option value="3">API</option>
                 </select>
             </div>
-            <div class="form-section">
+            <div class="form-conteudo">
                 <label for="observacoes">Observações:</label>
                 <textarea id="observacoes" placeholder="Escreva aqui as observações"></textarea>
             </div>
-            <div class="form-section">
-                <label class="checkbox-container">
+            <div class="form-conteudo">
+                <label class="caixa-checkbox">
                     <input type="checkbox" id="termos" required/>
                         Estou de acordo com os termos de serviço
                 </label>

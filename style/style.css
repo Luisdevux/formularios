@@ -12,7 +12,7 @@
     padding: 40px;
   }
 
-  .form-container {
+  .form-cartoes {
     width: 100%;
     max-width: 640px;
     display: flex;
@@ -20,7 +20,7 @@
     gap: 20px;
   }
 
-  .form-title {
+  .form-titulo {
     background: linear-gradient(rgba(0, 0, 0, 0.3)), url(../assets/foto-programacao.jpg) center/cover;
     color: #ffffff;
     padding: 50px;
@@ -29,7 +29,7 @@
     text-align: center;
   }
 
-.form-section {
+.form-conteudo {
     background-color: #ffffff;
     padding: 20px;
     border-left: 6px solid #3ab74f;
@@ -41,7 +41,7 @@
     margin-bottom: 16px;
 }
 
-.form-section label {
+.form-conteudo label {
     font-weight: 600;
     color: #202124;
     font-size: 14px;
@@ -74,17 +74,17 @@ textarea {
     min-height: 100px;
 }
 
-.form-options {
+.form-opcoes {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.form-options label {
+.form-opcoes label {
     font-weight: normal;
 }
 
-.checkbox-container {
+.caixa-checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
