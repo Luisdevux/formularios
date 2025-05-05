@@ -2,45 +2,61 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Formulário Cursos</title>
+    <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="EX: Luis Felipe Lopes"/>
+    <div class="form-container">
+        <div class="form-title">
+            <h2>Formulário de cadastro para Curso</h2>
         </div>
-        <div>
-            <label for="e-mail">E-mail</label>
-            <input type="email" id="email" placeholder="luis.felipe@gmail.com" />
-        </div>
-        <div>
-            <label>Sexo:</label>
-            <input type="radio" name="sexo" id="sexo_masculino" checked>
-            <label for="sexo masculino">masculino</label>
-            <input type="radio" name="sexo" id="sexo_feminino">
-            <label for="sexo feminino">feminino</label>            
-        </div>
-        <div>
-            <label for="cursos">Curso:</label>
-            <select id="cursos">
-                <option value="1">HTML e CSS</option>
-                <option value="2">Git</option>
-                <option value="3">API</option>
-            </select>
-        </div>
-        <div>
-            <label for="observacoes">Observações</label>
-            <textarea id="observacoes" placeholder="Escreva aqui as observações"></textarea>
-        </div>
-        <div>
-            <input type="checkbox" id="termos" />
-            <label for="termos">Estou de acordo com os termos de serviço</label>
-        </div>
-        <div>
-            <input type="submit" value="Cadastrar">
-        </div>
-    </form>
+        <form>
+            <div class="form-section">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="ex: Luis Felipe Lopes" required />
+            </div>
+
+            <div class="form-section">
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="email" placeholder="ex: meu.email@gmail.com" required />
+            </div>
+
+            <div class="form-section">
+                <label>Sexo:</label>
+                <div class="form-options">
+                    <input type="radio" name="sexo" id="sexo_masculino" required>
+                    <label for="sexo masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="sexo_feminino" required>
+                    <label for="sexo feminino">Feminino</label>
+                </div>            
+            </div>
+            <div class="form-section">
+                <label for="cursos">Curso:</label>
+                <select id="cursos" required>
+                    <option value="" disabled selected>Selecione um curso</option>
+                    <option value="1">HTML e CSS</option>
+                    <option value="2">Git</option>
+                    <option value="3">API</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" placeholder="Escreva aqui as observações"></textarea>
+            </div>
+            <div class="form-section">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="termos" required/>
+                        Estou de acordo com os termos de serviço
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
